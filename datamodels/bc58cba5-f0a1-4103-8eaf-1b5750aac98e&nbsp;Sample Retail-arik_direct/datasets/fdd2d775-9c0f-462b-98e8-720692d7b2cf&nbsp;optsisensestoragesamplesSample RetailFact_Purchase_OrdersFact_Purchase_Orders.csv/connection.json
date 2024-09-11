@@ -1,0 +1,7 @@
+{
+    "description": "",
+    "name": "",
+    "oid": "8e1a9b7f-4ef7-4679-87ff-65f68fc689e3",
+    "provider": "CSV",
+    "schema": "/opt/sisense/storage/samples/Sample Retail/Fact_Purchase_Orders/Fact_Purchase_Orders.csv"
+}

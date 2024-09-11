@@ -1,0 +1,7 @@
+{
+    "description": "",
+    "name": "",
+    "oid": "08cc94df-e543-4fc1-9f3a-edbcf3585579",
+    "provider": "CSV",
+    "schema": "/opt/sisense/storage/samples/Sample Retail/DimCountries/DimCountries.csv"
+}

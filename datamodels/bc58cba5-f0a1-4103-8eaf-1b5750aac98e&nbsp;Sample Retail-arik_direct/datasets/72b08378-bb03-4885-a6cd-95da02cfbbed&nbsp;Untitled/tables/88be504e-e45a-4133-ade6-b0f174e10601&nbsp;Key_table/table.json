@@ -1,0 +1,109 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "d4126215-d566-430a-bfaf-55e390901c72",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "key",
+            "oid": "80ddd586-2f32-4776-9cad-f4f06d7f4f78",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "e9ed262c-1c28-4db8-b914-784eb01ad4de",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "CountryCode",
+            "oid": "997ac4d5-b124-494a-a964-afd1bdc57997",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "5f820f47-97e6-4aa5-921b-bf729ddd680c",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "EmployeeID",
+            "oid": "17385c1e-aa56-4e69-a797-e0499d784e3f",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "6cd24072-4c06-47f1-885a-4cf7876c0feb",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "ProductID",
+            "oid": "ffd1b36e-c8df-4765-8c69-cdee0d599e5e",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "8ad7437f-5cff-4eca-b5d1-0b44bca9f664",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "CustomerID",
+            "oid": "f1f75df5-ab43-43a5-81a9-a49da31658e5",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "6be4f8e6-66ff-4e8f-a466-42e14c1fb339",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "RuleID",
+            "oid": "f859bd96-c7ad-48ea-8952-565fd9d0e6d7",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "c13e8d03-f41f-4704-aeec-402330c32030",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "RiskID",
+            "oid": "823edf06-5d53-418b-b4ac-e8a2dbea7a57",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        }
+    ],
+    "dataset": "72b08378-bb03-4885-a6cd-95da02cfbbed",
+    "description": null,
+    "expression": {
+        "expression": "./table.sql",
+        "isDatabaseDialect": false,
+        "oid": "027b4273-bd81-483a-b603-914d206bf519"
+    },
+    "hidden": false,
+    "id": "Key_table",
+    "isMaterialized": null,
+    "isRoleBySystem": null,
+    "name": "Key_table",
+    "oid": "88be504e-e45a-4133-ade6-b0f174e10601",
+    "role": null,
+    "tags": null,
+    "tupleTransformations": [
+    ],
+    "type": "custom"
+}

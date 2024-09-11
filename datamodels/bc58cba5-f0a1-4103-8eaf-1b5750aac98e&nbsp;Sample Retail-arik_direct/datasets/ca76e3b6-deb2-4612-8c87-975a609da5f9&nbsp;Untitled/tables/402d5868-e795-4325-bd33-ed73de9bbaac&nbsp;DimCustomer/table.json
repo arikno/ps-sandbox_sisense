@@ -1,0 +1,61 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "8a6284f1-6e52-47eb-b5c4-922a7a2e4e0c",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "CustomerID",
+            "oid": "7d2154eb-6403-48ae-aebf-a7f956c31aba",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "731d88aa-c845-4ada-a079-caa9d8c4a440",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "StoreID",
+            "oid": "fd207314-2aae-4716-ba61-63de44781c98",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "d401cc4e-e273-433e-bfaf-6774818031f8",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "TerritoryID",
+            "oid": "61dba826-f6e9-42c8-8f67-67440bde5870",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        }
+    ],
+    "dataset": "ca76e3b6-deb2-4612-8c87-975a609da5f9",
+    "description": null,
+    "expression": {
+        "expression": "./table.sql",
+        "isDatabaseDialect": false,
+        "oid": "f11e068b-b1c9-4ee8-b23b-508eba632644"
+    },
+    "hidden": false,
+    "id": "DimCustomer",
+    "isMaterialized": null,
+    "isRoleBySystem": null,
+    "name": "DimCustomer",
+    "oid": "402d5868-e795-4325-bd33-ed73de9bbaac",
+    "role": null,
+    "tags": null,
+    "tupleTransformations": [
+    ],
+    "type": "custom"
+}

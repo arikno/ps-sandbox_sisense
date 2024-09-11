@@ -1,0 +1,41 @@
+{
+    "buildBehavior": {
+        "accumulativeConfig": null,
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "Date",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Date",
+            "oid": "8782771d-fa92-42cf-8751-cc923f9ca81d",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 4
+        }
+    ],
+    "configOptions": {
+        "columnsDateTimePatterns": "{}",
+        "culture": "en-US",
+        "delimiter": ",",
+        "excludeIfBegins": "",
+        "excludeIfContains": "",
+        "hasHeader": true,
+        "ignoreFirstRows": "",
+        "ignoreMissingColumns": false,
+        "stringQuote": "\""
+    },
+    "dataset": "5438c8ba-61d8-49f9-ae00-aae80116eb30",
+    "hidden": false,
+    "id": "DimDate.csv",
+    "isMaterialized": false,
+    "name": "DimDate",
+    "oid": "b1045ea0-ec85-40f0-9b73-646367c90fcf",
+    "schemaName": "/opt/sisense/storage/samples/Sample Retail/DimDate/DimDate.csv",
+    "tupleTransformations": [
+    ],
+    "type": "base"
+}

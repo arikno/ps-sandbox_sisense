@@ -1,0 +1,33 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "2a11b2b3-c3e5-49d2-be67-b50028ee6fa7",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "RuleID",
+            "oid": "2fe47019-4cd2-4c12-8e0a-06b399245ff7",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        }
+    ],
+    "dataset": "195e04f8-3ab8-4796-8b05-be07a742219e",
+    "expression": {
+        "expression": "./table.sql",
+        "isDatabaseDialect": false,
+        "oid": "73e4e9fc-533c-4b1d-96f5-e4f564a6e354"
+    },
+    "hidden": false,
+    "id": "DimRule",
+    "isMaterialized": null,
+    "name": "DimRule",
+    "oid": "bd95daba-c018-4be1-bf28-2b59476007af",
+    "tupleTransformations": [
+    ],
+    "type": "custom"
+}

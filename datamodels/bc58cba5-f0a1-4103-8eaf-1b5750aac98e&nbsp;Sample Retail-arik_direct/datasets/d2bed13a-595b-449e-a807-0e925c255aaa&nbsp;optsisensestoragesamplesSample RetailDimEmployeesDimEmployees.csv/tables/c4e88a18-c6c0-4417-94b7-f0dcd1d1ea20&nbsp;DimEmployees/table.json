@@ -1,0 +1,77 @@
+{
+    "buildBehavior": {
+        "accumulativeConfig": null,
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": true,
+            "id": "EmployeeID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "EmployeeID",
+            "oid": "d6994039-5792-49ca-b1b4-1f76725dd1ef",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "EmployeeName",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "EmployeeName",
+            "oid": "8c9e35bc-eef6-4df7-9ac8-569d24737c85",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "TeamManger",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "TeamManger",
+            "oid": "f4d331e6-e0a6-47e0-8b5e-b643b7d77162",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "TeamID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "TeamID",
+            "oid": "246526f3-4c0e-4250-9a80-d38e5a7224c1",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        }
+    ],
+    "configOptions": {
+        "columnsDateTimePatterns": "{}",
+        "culture": "en-US",
+        "delimiter": ",",
+        "excludeIfBegins": "",
+        "excludeIfContains": "",
+        "hasHeader": true,
+        "ignoreFirstRows": "",
+        "ignoreMissingColumns": false,
+        "stringQuote": "\""
+    },
+    "dataset": "d2bed13a-595b-449e-a807-0e925c255aaa",
+    "hidden": false,
+    "id": "DimEmployees.csv",
+    "isMaterialized": false,
+    "name": "DimEmployees",
+    "oid": "c4e88a18-c6c0-4417-94b7-f0dcd1d1ea20",
+    "schemaName": "/opt/sisense/storage/samples/Sample Retail/DimEmployees/DimEmployees.csv",
+    "tupleTransformations": [
+    ],
+    "type": "base"
+}

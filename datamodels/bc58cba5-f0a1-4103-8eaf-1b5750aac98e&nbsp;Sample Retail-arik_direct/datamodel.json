@@ -1,0 +1,44 @@
+{
+    "buildDestination": {
+        "database": null,
+        "destination": "elasticube"
+    },
+    "datasets": [
+        "./195e04f8-3ab8-4796-8b05-be07a742219e/dataset.json",
+        "./5438c8ba-61d8-49f9-ae00-aae80116eb30/dataset.json",
+        "./66571658-2715-4ad2-abce-6ef173fd8e13/dataset.json",
+        "./72b08378-bb03-4885-a6cd-95da02cfbbed/dataset.json",
+        "./775fd0f0-f6eb-4625-badf-fb396715d7ff/dataset.json",
+        "./984a5c22-997a-43c2-85e2-171fcbe653b2/dataset.json",
+        "./bdb6acd6-05a0-4505-abab-a4c937e0043f/dataset.json",
+        "./ca76e3b6-deb2-4612-8c87-975a609da5f9/dataset.json",
+        "./d2bed13a-595b-449e-a807-0e925c255aaa/dataset.json",
+        "./f546db44-8acc-4a5b-b4cf-525f7308f402/dataset.json",
+        "./fdd2d775-9c0f-462b-98e8-720692d7b2cf/dataset.json"
+    ],
+    "dependencies": {
+        "perspectives": [
+            "./bc58cba5-f0a1-4103-8eaf-1b5750aac98e/perspective.json"
+        ]
+    },
+    "experiments": {
+    },
+    "fiscal": "system",
+    "hierarchies": [
+    ],
+    "modelStatistics": {
+        "allTablesPerCollection": true,
+        "enableModelStatistics": false,
+        "maxTablesPerCollection": null,
+        "recollectStatsInterval": null
+    },
+    "oid": "bc58cba5-f0a1-4103-8eaf-1b5750aac98e",
+    "relationType": "direct",
+    "relations": "./relations.json",
+    "relationsTables": [
+    ],
+    "schemaId": null,
+    "shouldUpdateScheduleOnManualBuild": null,
+    "title": "Sample Retail-arik_direct",
+    "type": "extract"
+}

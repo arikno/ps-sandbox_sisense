@@ -1,0 +1,65 @@
+{
+    "buildBehavior": {
+        "accumulativeConfig": null,
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": true,
+            "id": "CountryCode",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "CountryCode",
+            "oid": "5caea6a0-8ed9-48f4-8f76-472b910c24bf",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "CountryName",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "CountryName",
+            "oid": "0fd9770c-e867-470d-b50c-23f3581a0a66",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Region",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Region",
+            "oid": "a91559a5-51a6-4f27-b60a-8d4086ebba87",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 18
+        }
+    ],
+    "configOptions": {
+        "columnsDateTimePatterns": "{}",
+        "culture": "en-US",
+        "delimiter": ",",
+        "excludeIfBegins": "",
+        "excludeIfContains": "",
+        "hasHeader": true,
+        "ignoreFirstRows": "",
+        "ignoreMissingColumns": false,
+        "stringQuote": "\""
+    },
+    "dataset": "66571658-2715-4ad2-abce-6ef173fd8e13",
+    "hidden": false,
+    "id": "DimCountries.csv",
+    "isMaterialized": false,
+    "name": "DimCountries",
+    "oid": "d4f1eaeb-13ea-444c-9db2-f7fbda165ad1",
+    "schemaName": "/opt/sisense/storage/samples/Sample Retail/DimCountries/DimCountries.csv",
+    "tupleTransformations": [
+    ],
+    "type": "base"
+}
