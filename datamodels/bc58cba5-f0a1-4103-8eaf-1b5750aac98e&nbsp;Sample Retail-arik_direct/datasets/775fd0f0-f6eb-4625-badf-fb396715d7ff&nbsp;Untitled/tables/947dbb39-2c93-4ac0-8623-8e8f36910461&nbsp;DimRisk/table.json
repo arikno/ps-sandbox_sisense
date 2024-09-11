@@ -29,7 +29,6 @@
         }
     ],
     "dataset": "775fd0f0-f6eb-4625-badf-fb396715d7ff",
-    "description": null,
     "expression": {
         "expression": "./table.sql",
         "isDatabaseDialect": false,
@@ -38,11 +37,8 @@
     "hidden": false,
     "id": "DimRisk",
     "isMaterialized": null,
-    "isRoleBySystem": null,
     "name": "DimRisk",
     "oid": "947dbb39-2c93-4ac0-8623-8e8f36910461",
-    "role": null,
-    "tags": null,
     "tupleTransformations": [
     ],
     "type": "custom"
