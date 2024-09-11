@@ -86,6 +86,18 @@
             "scale": 0,
             "size": 0,
             "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "c11f87fd-7849-46a1-ab32-281462349dcb",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "yy",
+            "oid": "3622a474-43cd-459e-81a7-1a639ea8bd1c",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
         }
     ],
     "dataset": "72b08378-bb03-4885-a6cd-95da02cfbbed",
@@ -93,7 +105,7 @@
     "expression": {
         "expression": "./table.sql",
         "isDatabaseDialect": false,
-        "oid": "027b4273-bd81-483a-b603-914d206bf519"
+        "oid": "6731ebf0-1af0-46d9-95b1-51cdd54e6905"
     },
     "hidden": false,
     "id": "Key_table",

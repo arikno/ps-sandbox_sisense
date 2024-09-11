@@ -41,7 +41,6 @@
         }
     ],
     "dataset": "ca76e3b6-deb2-4612-8c87-975a609da5f9",
-    "description": null,
     "expression": {
         "expression": "./table.sql",
         "isDatabaseDialect": false,
@@ -50,11 +49,8 @@
     "hidden": false,
     "id": "DimCustomer",
     "isMaterialized": null,
-    "isRoleBySystem": null,
     "name": "DimCustomer",
     "oid": "402d5868-e795-4325-bd33-ed73de9bbaac",
-    "role": null,
-    "tags": null,
     "tupleTransformations": [
     ],
     "type": "custom"
