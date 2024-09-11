@@ -101,7 +101,6 @@
         }
     ],
     "dataset": "72b08378-bb03-4885-a6cd-95da02cfbbed",
-    "description": null,
     "expression": {
         "expression": "./table.sql",
         "isDatabaseDialect": false,
@@ -110,11 +109,8 @@
     "hidden": false,
     "id": "Key_table",
     "isMaterialized": null,
-    "isRoleBySystem": null,
     "name": "Key_table",
     "oid": "88be504e-e45a-4133-ade6-b0f174e10601",
-    "role": null,
-    "tags": null,
     "tupleTransformations": [
     ],
     "type": "custom"
