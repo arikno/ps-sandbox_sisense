@@ -1,0 +1,83 @@
+{
+    "aiSettings": {
+        "explanations": {
+            "dimensionsForRecommendation": "allDataModelDims"
+        }
+    },
+    "allowChangeSubscription": false,
+    "autoUpdateOnFiltersChange": true,
+    "dataExploration": true,
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aAzureSQLIAAaEC",
+        "fullname": "localhost/AzureSQL EC",
+        "id": "localhost_aAzureSQLIAAaEC",
+        "live": false,
+        "title": "AzureSQL EC"
+    },
+    "defaultFilterRelations": [
+    ],
+    "desc": "",
+    "filterRelations": [
+    ],
+    "filters": "./filters.json",
+    "hierarchies": [
+        "./hierarchies/Site Group.json"
+    ],
+    "layout": "./layout.json",
+    "oid": "6628e35415248d0032eaa652",
+    "settings": {
+        "autoUpdateOnFiltersChange": true,
+        "useAcceleration": false
+    },
+    "style": {
+        "palette": {
+            "colors": [
+                "#00cee6",
+                "#9b9bd7",
+                "#6EDA55",
+                "#fc7570",
+                "#fbb755",
+                "#218A8C"
+            ],
+            "name": "Vivid"
+        }
+    },
+    "subscription": {
+        "active": false,
+        "context": {
+            "dashboardid": "6628e35415248d0032eaa652"
+        },
+        "emailSettings": {
+            "isEmail": true,
+            "isPdf": false
+        },
+        "executionPerDay": 1,
+        "isDataChange": true,
+        "reportType": {
+            "inline": true
+        },
+        "schedule": "* * * * * *",
+        "startAt": "2024-04-24",
+        "subscribe": false,
+        "timezone": -180,
+        "type": "onUpdate",
+        "tzName": "Asia/Jerusalem"
+    },
+    "title": "Dashboard SQL EC (1)",
+    "useAcceleration": false,
+    "widgets": [
+        "./widgets/6628e35415248d0032eaa653/widget.json",
+        "./widgets/6628e35415248d0032eaa654/widget.json",
+        "./widgets/6628e35415248d0032eaa655/widget.json",
+        "./widgets/6628e35415248d0032eaa656/widget.json",
+        "./widgets/6628e35415248d0032eaa657/widget.json",
+        "./widgets/6628e35415248d0032eaa658/widget.json",
+        "./widgets/6628e35415248d0032eaa659/widget.json",
+        "./widgets/6628e35415248d0032eaa65a/widget.json",
+        "./widgets/6628e35415248d0032eaa65b/widget.json",
+        "./widgets/6628e35415248d0032eaa65c/widget.json",
+        "./widgets/6628e35415248d0032eaa65d/widget.json",
+        "./widgets/6628e35415248d0032eaa65e/widget.json"
+    ]
+}

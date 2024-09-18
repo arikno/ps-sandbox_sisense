@@ -1,0 +1,353 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "6628e35415248d0032eaa652",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aAzureSQLIAAaEC",
+        "fullname": "localhost/AzureSQL EC",
+        "id": "localhost_aAzureSQLIAAaEC",
+        "live": false,
+        "title": "AzureSQL EC"
+    },
+    "desc": null,
+    "drillToDashboardConfig": {
+        "dashboardIds": [
+        ],
+        "displayDashboardsPane": true,
+        "displayFilterPane": true,
+        "displayHeaderRow": true,
+        "displayToolbarRow": true,
+        "drillToDashboardByName": false,
+        "drillToDashboardMenuCaption": "Jump to dashboard",
+        "drillToDashboardNavigateType": 1,
+        "drillToDashboardNavigateTypeCharts": 1,
+        "drillToDashboardNavigateTypeOthers": 3,
+        "drillToDashboardNavigateTypePivot": 2,
+        "drillToDashboardRightMenuCaption": "Jump to ",
+        "drilledDashboardDisplayType": 2,
+        "drilledDashboardPrefix": "_drill",
+        "drilledDashboardsFolderPrefix": "",
+        "excludeFilterDims": [
+        ],
+        "forceZeroInsteadNull": false,
+        "hideDrilledDashboards": true,
+        "hideSharedDashboardsForNonOwner": true,
+        "ignoreFiltersSource": false,
+        "includeFilterDims": [
+        ],
+        "mergeTargetDashboardFilters": false,
+        "modalWindowResize": false,
+        "resetDashFiltersAfterJTD": false,
+        "sameCubeRestriction": true,
+        "sendBreakByValueFilter": true,
+        "sendPieChartMeasureFiltersOnClick": true,
+        "showFolderNameOnMenuSelection": false,
+        "showJTDIcon": true,
+        "volatile": false
+    },
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "activeHierarchy": {
+                            "_id": "638e8126fd753f003734c432",
+                            "title": "Site Group"
+                        },
+                        "format": {
+                            "continuous": false
+                        },
+                        "instanceid": "B0110-D6A3-77",
+                        "jaql": {
+                            "column": "Site Group",
+                            "datatype": "text",
+                            "dim": "[Site Group.Site Group]",
+                            "merged": true,
+                            "table": "Site Group",
+                            "title": "Site Group"
+                        },
+                        "panel": "rows"
+                    }
+                ],
+                "name": "categories"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "color": {
+                                "color": "#f0bf00",
+                                "isHandPickedColor": true,
+                                "type": "color"
+                            },
+                            "mask": {
+                                "decimals": "auto",
+                                "percent": true,
+                                "percentMultiplier": 100
+                            }
+                        },
+                        "instanceid": "50E9F-E16A-2D",
+                        "jaql": {
+                            "context": {
+                                "[3A890-812]": {
+                                    "column": "Hours Booked",
+                                    "datatype": "numeric",
+                                    "dim": "[Bookings.Hours Booked]",
+                                    "table": "Bookings",
+                                    "title": "Hours  Booked"
+                                },
+                                "[B4109-498]": {
+                                    "column": "Available Hours",
+                                    "datatype": "numeric",
+                                    "dim": "[Resource Availability.Available Hours]",
+                                    "table": "Resource Availability",
+                                    "title": "Available Hours"
+                                }
+                            },
+                            "formula": "sum([3A890-812]) / SUM ([B4109-498])",
+                            "sort": "desc",
+                            "title": "Resource Utilization",
+                            "type": "measure"
+                        },
+                        "panel": "measures",
+                        "singleSeriesType": "column",
+                        "y2": false
+                    },
+                    {
+                        "disabled": false,
+                        "format": {
+                            "color": {
+                                "color": "#00cee6",
+                                "isHandPickedColor": true,
+                                "type": "color"
+                            },
+                            "mask": {
+                                "abbreviateAll": false,
+                                "abbreviations": {
+                                    "b": true,
+                                    "k": true,
+                                    "m": true,
+                                    "t": true
+                                },
+                                "currency": {
+                                    "position": "pre",
+                                    "symbol": "€"
+                                },
+                                "decimals": "auto"
+                            }
+                        },
+                        "instanceid": "46C48-9234-9C",
+                        "jaql": {
+                            "context": {
+                                "[BBD74-E4A]": {
+                                    "column": "bookingCount",
+                                    "datatype": "numeric",
+                                    "dim": "[Bookings.bookingCount]",
+                                    "table": "Bookings",
+                                    "title": "bookingCount"
+                                }
+                            },
+                            "formula": "SUM([BBD74-E4A])",
+                            "title": "# Bookings",
+                            "type": "measure"
+                        },
+                        "panel": "measures",
+                        "singleSeriesType": "line",
+                        "statisticalModels": {
+                            "anomaly": {
+                                "isAccessible": false
+                            },
+                            "breakpoint": {
+                                "isAccessible": false
+                            },
+                            "forecast": {
+                                "boundaries": {
+                                    "isInt": {
+                                        "isEnabled": false
+                                    },
+                                    "lower": {
+                                        "isEnabled": false,
+                                        "value": null
+                                    },
+                                    "upper": {
+                                        "isEnabled": false,
+                                        "value": null
+                                    }
+                                },
+                                "confidence": 80,
+                                "evaluation": {
+                                    "ignoreLast": 0,
+                                    "numLastPointsForEvaluation": 0,
+                                    "type": "all"
+                                },
+                                "explainVariable": null,
+                                "forecastPeriod": 6,
+                                "isAccessible": false,
+                                "isEnabled": false,
+                                "isViewerDisabled": true,
+                                "modelType": "en"
+                            },
+                            "trend": {
+                                "compare": {
+                                    "isEnabled": false,
+                                    "period": "year"
+                                },
+                                "ignoreAnomalies": false,
+                                "isAccessible": false,
+                                "isEnabled": true,
+                                "isViewerDisabled": true,
+                                "trendOnForecast": false,
+                                "trendType": "local"
+                            }
+                        },
+                        "y2": true
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                ],
+                "name": "break by"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "6628e35415248d0032eaa659",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "drillToAnywhere": true,
+        "previousScrollerLocation": {
+            "max": null,
+            "min": null
+        },
+        "selector": true,
+        "selectorLocked": false,
+        "triggersDomready": true
+    },
+    "prevSortObjects": [
+    ],
+    "style": {
+        "dataLimits": {
+            "categoriesCapacity": 100000,
+            "seriesCapacity": 50
+        },
+        "legend": {
+            "enabled": true,
+            "position": "bottom"
+        },
+        "lineWidth": {
+            "width": "bold"
+        },
+        "markers": {
+            "enabled": false,
+            "fill": "filled",
+            "size": "small"
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "site_group",
+                    "plural": "Site Group",
+                    "singular": "Site Group",
+                    "title": "Site Group"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "navigator": {
+            "enabled": true
+        },
+        "seriesLabels": {
+            "enabled": false,
+            "labels": {
+                "enabled": false,
+                "stacked": false,
+                "stackedPercentage": false,
+                "types": {
+                    "count": false,
+                    "percentage": false,
+                    "relative": false,
+                    "totals": false
+                }
+            },
+            "rotation": 0
+        },
+        "xAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "isIntervalEnabled": false,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "ticks": true,
+            "title": {
+                "enabled": false
+            },
+            "x2Title": {
+                "enabled": false
+            }
+        },
+        "y2Axis": {
+            "enabled": true,
+            "gridLines": false,
+            "hideMinMax": false,
+            "inactive": false,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "templateMainYHasGridLines": true,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        },
+        "yAxis": {
+            "enabled": true,
+            "gridLines": true,
+            "hideMinMax": false,
+            "inactive": false,
+            "isIntervalEnabled": true,
+            "labels": {
+                "enabled": true,
+                "rotation": 0
+            },
+            "logarithmic": false,
+            "ticks": true,
+            "title": {
+                "enabled": false
+            }
+        }
+    },
+    "subtype": "column/classic",
+    "title": "Utilisation by Location",
+    "type": "chart/column"
+}

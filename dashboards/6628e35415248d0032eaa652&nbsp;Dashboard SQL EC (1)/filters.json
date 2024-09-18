@@ -1,0 +1,417 @@
+{
+    "defaultFilters": [
+        {
+            "disabled": false,
+            "instanceid": "D27CB-BD4C-AA",
+            "isCascading": true,
+            "levels": [
+                {
+                    "collapsed": true,
+                    "column": "Site Group",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "text",
+                    "dim": "[Site Group.Site Group]",
+                    "filter": {
+                        "explicit": true,
+                        "members": [
+                            "Europe"
+                        ],
+                        "multiSelection": true
+                    },
+                    "firstday": "mon",
+                    "isDashboardFilter": true,
+                    "locale": "en-us",
+                    "merged": true,
+                    "panel": "scope",
+                    "table": "Site Group",
+                    "title": "Site Group"
+                },
+                {
+                    "collapsed": true,
+                    "column": "Site",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "text",
+                    "dim": "[Site.Site]",
+                    "filter": {
+                        "all": true,
+                        "explicit": false,
+                        "multiSelection": true
+                    },
+                    "isDashboardFilter": true,
+                    "merged": true,
+                    "panel": "scope",
+                    "table": "Site",
+                    "title": "Site"
+                },
+                {
+                    "_id": "638e812efd753f003734c436",
+                    "collapsed": true,
+                    "column": "Area",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "text",
+                    "dim": "[Area.Area]",
+                    "filter": {
+                        "all": true,
+                        "explicit": false,
+                        "multiSelection": true
+                    },
+                    "index": 2,
+                    "isDashboardFilter": true,
+                    "merged": true,
+                    "panel": "scope",
+                    "table": "Area",
+                    "title": "Area"
+                },
+                {
+                    "collapsed": true,
+                    "column": "Resource",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "text",
+                    "dim": "[Resource.Resource]",
+                    "filter": {
+                        "all": true,
+                        "explicit": false,
+                        "multiSelection": true
+                    },
+                    "isDashboardFilter": true,
+                    "merged": true,
+                    "table": "Resource",
+                    "title": "Resource"
+                }
+            ],
+            "model": {
+                "__store": [
+                    "[Site Group.Site Group]",
+                    "[Site.Site]",
+                    "[Area.Area]",
+                    "[Resource.Resource]"
+                ],
+                "instanceid": "CFB3F-E908-4C"
+            }
+        },
+        {
+            "disabled": false,
+            "instanceid": "B751C-91A3-97",
+            "isCascading": true,
+            "levels": [
+                {
+                    "collapsed": true,
+                    "column": "Date",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "datetime",
+                    "dim": "[Dates.Date (Calendar)]",
+                    "filter": {
+                        "all": true,
+                        "explicit": false,
+                        "multiSelection": true
+                    },
+                    "isDashboardFilter": true,
+                    "level": "years",
+                    "merged": true,
+                    "panel": "scope",
+                    "table": "Dates",
+                    "title": "Years in Date"
+                },
+                {
+                    "collapsed": true,
+                    "column": "Date",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "datetime",
+                    "dim": "[Dates.Date (Calendar)]",
+                    "filter": {
+                        "all": true,
+                        "explicit": false,
+                        "multiSelection": true
+                    },
+                    "isDashboardFilter": true,
+                    "level": "months",
+                    "merged": true,
+                    "panel": "scope",
+                    "table": "Dates",
+                    "title": "Months in Date"
+                },
+                {
+                    "collapsed": true,
+                    "column": "Date",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "datetime",
+                    "dim": "[Dates.Date (Calendar)]",
+                    "filter": {
+                        "all": true,
+                        "explicit": false,
+                        "multiSelection": true
+                    },
+                    "isDashboardFilter": true,
+                    "level": "days",
+                    "merged": true,
+                    "table": "Dates",
+                    "title": "Days in Date"
+                }
+            ],
+            "model": {
+                "__store": [
+                    "[Dates.Date (Calendar)]",
+                    "[Dates.Date (Calendar)]",
+                    "[Dates.Date (Calendar)]"
+                ],
+                "instanceid": "864F5-096A-C7"
+            }
+        },
+        {
+            "disabled": false,
+            "instanceid": "305A4-24F4-BA",
+            "isCascading": false,
+            "jaql": {
+                "collapsed": true,
+                "column": "Username",
+                "datasource": {
+                    "address": "LocalHost",
+                    "database": "aAzureSQLIAAaEC",
+                    "fullname": "localhost/AzureSQL EC",
+                    "id": "localhost_aAzureSQLIAAaEC",
+                    "live": false,
+                    "title": "AzureSQL EC"
+                },
+                "datatype": "text",
+                "dim": "[User.Username]",
+                "filter": {
+                    "all": true,
+                    "explicit": false,
+                    "multiSelection": true
+                },
+                "isDashboardFilter": true,
+                "merged": true,
+                "table": "User",
+                "title": "Username"
+            }
+        }
+    ],
+    "filters": [
+        {
+            "disabled": false,
+            "instanceid": "D27CB-BD4C-AA",
+            "isCascading": true,
+            "levels": [
+                {
+                    "collapsed": true,
+                    "column": "Site Group",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "text",
+                    "dim": "[Site Group.Site Group]",
+                    "filter": {
+                        "all": true,
+                        "explicit": false,
+                        "multiSelection": true
+                    },
+                    "firstday": "mon",
+                    "isDashboardFilter": true,
+                    "locale": "en-us",
+                    "merged": true,
+                    "panel": "scope",
+                    "table": "Site Group",
+                    "title": "Site Group"
+                },
+                {
+                    "collapsed": true,
+                    "column": "Site",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "text",
+                    "dim": "[Site.Site]",
+                    "filter": {
+                        "all": true,
+                        "explicit": false,
+                        "multiSelection": true
+                    },
+                    "isDashboardFilter": true,
+                    "merged": true,
+                    "panel": "scope",
+                    "table": "Site",
+                    "title": "Site"
+                },
+                {
+                    "_id": "638e812efd753f003734c436",
+                    "collapsed": true,
+                    "column": "Area",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "text",
+                    "dim": "[Area.Area]",
+                    "filter": {
+                        "all": true,
+                        "explicit": false,
+                        "multiSelection": true
+                    },
+                    "index": 2,
+                    "isDashboardFilter": true,
+                    "merged": true,
+                    "panel": "scope",
+                    "table": "Area",
+                    "title": "Area"
+                },
+                {
+                    "collapsed": true,
+                    "column": "Resource",
+                    "datasource": {
+                        "address": "LocalHost",
+                        "database": "aAzureSQLIAAaEC",
+                        "fullname": "localhost/AzureSQL EC",
+                        "id": "localhost_aAzureSQLIAAaEC",
+                        "live": false,
+                        "title": "AzureSQL EC"
+                    },
+                    "datatype": "text",
+                    "dim": "[Resource.Resource]",
+                    "filter": {
+                        "all": true,
+                        "explicit": false,
+                        "multiSelection": true
+                    },
+                    "isDashboardFilter": true,
+                    "merged": true,
+                    "table": "Resource",
+                    "title": "Resource"
+                }
+            ],
+            "model": {
+                "__store": [
+                    "[Site Group.Site Group]",
+                    "[Site.Site]",
+                    "[Area.Area]",
+                    "[Resource.Resource]"
+                ],
+                "instanceid": "CFB3F-E908-4C"
+            }
+        },
+        {
+            "disabled": false,
+            "instanceid": "EA390-06BC-C9",
+            "isCascading": false,
+            "jaql": {
+                "collapsed": true,
+                "column": "Date",
+                "datasource": {
+                    "address": "LocalHost",
+                    "database": "aAzureSQLIAAaEC",
+                    "fullname": "localhost/AzureSQL EC",
+                    "id": "localhost_aAzureSQLIAAaEC",
+                    "live": false,
+                    "title": "AzureSQL EC"
+                },
+                "datatype": "datetime",
+                "dim": "[Dates.Date (Calendar)]",
+                "filter": {
+                    "all": true,
+                    "explicit": false,
+                    "multiSelection": true
+                },
+                "firstday": "mon",
+                "isDashboardFilter": true,
+                "level": "months",
+                "locale": "en-us",
+                "merged": true,
+                "panel": "scope",
+                "table": "Dates",
+                "title": "Date"
+            }
+        },
+        {
+            "disabled": false,
+            "instanceid": "305A4-24F4-BA",
+            "isCascading": false,
+            "jaql": {
+                "collapsed": true,
+                "column": "Username",
+                "datasource": {
+                    "address": "LocalHost",
+                    "database": "aAzureSQLIAAaEC",
+                    "fullname": "localhost/AzureSQL EC",
+                    "id": "localhost_aAzureSQLIAAaEC",
+                    "live": false,
+                    "title": "AzureSQL EC"
+                },
+                "datatype": "text",
+                "dim": "[User.Username]",
+                "filter": {
+                    "all": true,
+                    "explicit": false,
+                    "multiSelection": true
+                },
+                "firstday": "mon",
+                "isDashboardFilter": true,
+                "locale": "en-us",
+                "merged": true,
+                "table": "User",
+                "title": "Username"
+            }
+        }
+    ]
+}

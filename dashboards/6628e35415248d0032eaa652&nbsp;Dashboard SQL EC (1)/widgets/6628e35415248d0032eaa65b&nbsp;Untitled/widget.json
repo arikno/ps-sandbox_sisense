@@ -1,0 +1,428 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "6628e35415248d0032eaa652",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aAzureSQLIAAaEC",
+        "fullname": "LocalHost/AzureSQL EC",
+        "id": "aLOCALHOST_aAZURESQLIAAaEC",
+        "title": "AzureSQL EC"
+    },
+    "desc": null,
+    "drillToDashboardConfig": {
+        "dashboardIds": [
+        ],
+        "displayDashboardsPane": true,
+        "displayFilterPane": true,
+        "displayHeaderRow": true,
+        "displayToolbarRow": true,
+        "drillToDashboardByName": false,
+        "drillToDashboardMenuCaption": "Jump to dashboard",
+        "drillToDashboardNavigateType": 1,
+        "drillToDashboardNavigateTypeCharts": 1,
+        "drillToDashboardNavigateTypeOthers": 3,
+        "drillToDashboardNavigateTypePivot": 2,
+        "drillToDashboardRightMenuCaption": "Jump to ",
+        "drilledDashboardDisplayType": 2,
+        "drilledDashboardPrefix": "_drill",
+        "drilledDashboardsFolderPrefix": "",
+        "excludeFilterDims": [
+        ],
+        "forceZeroInsteadNull": false,
+        "hideDrilledDashboards": true,
+        "hideSharedDashboardsForNonOwner": true,
+        "ignoreFiltersSource": false,
+        "includeFilterDims": [
+        ],
+        "mergeTargetDashboardFilters": false,
+        "modalWindowResize": false,
+        "resetDashFiltersAfterJTD": false,
+        "sameCubeRestriction": true,
+        "sendBreakByValueFilter": true,
+        "sendPieChartMeasureFiltersOnClick": true,
+        "showFolderNameOnMenuSelection": false,
+        "showJTDIcon": true,
+        "volatile": false
+    },
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[Dates.Date (Calendar)]_quarters",
+                            "index": 0
+                        },
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/yyyy HH:mm",
+                                "days": "shortDate",
+                                "isdefault": true,
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "seconds": "MM/dd/yyyy HH:mm:ss",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            }
+                        },
+                        "hierarchies": [
+                            "calendar",
+                            "calendar - weeks"
+                        ],
+                        "instanceid": "0E89D-E7FE-3B",
+                        "jaql": {
+                            "column": "Date",
+                            "datatype": "datetime",
+                            "dim": "[Dates.Date (Calendar)]",
+                            "level": "quarters",
+                            "merged": true,
+                            "table": "Dates",
+                            "title": "Quarters in Date"
+                        },
+                        "panel": "rows"
+                    },
+                    {
+                        "format": {
+                            "mask": {
+                                "abbreviateAll": false,
+                                "abbreviations": {
+                                    "b": false,
+                                    "k": false,
+                                    "m": false,
+                                    "t": false
+                                },
+                                "currency": {
+                                    "symbol": "€"
+                                },
+                                "decimals": "auto"
+                            }
+                        },
+                        "instanceid": "7D3B6-2AFA-21",
+                        "jaql": {
+                            "column": "bookingCreatedByUserId",
+                            "datatype": "numeric",
+                            "dim": "[Bookings.bookingCreatedByUserId]",
+                            "merged": true,
+                            "table": "Bookings",
+                            "title": "bookingCreatedByUserId"
+                        }
+                    },
+                    {
+                        "instanceid": "78BCA-9F57-28",
+                        "jaql": {
+                            "column": "Area",
+                            "datatype": "text",
+                            "dim": "[Area.Area]",
+                            "merged": true,
+                            "table": "Area",
+                            "title": "Area"
+                        }
+                    },
+                    {
+                        "instanceid": "B5088-428F-E3",
+                        "jaql": {
+                            "column": "bookingId",
+                            "datatype": "text",
+                            "dim": "[Bookings.bookingId]",
+                            "merged": true,
+                            "table": "Bookings",
+                            "title": "bookingId"
+                        }
+                    },
+                    {
+                        "instanceid": "E4BD5-905C-FD",
+                        "jaql": {
+                            "column": "Site Group",
+                            "datatype": "text",
+                            "dim": "[Site Group.Site Group]",
+                            "merged": true,
+                            "table": "Site Group",
+                            "title": "Site Group"
+                        }
+                    },
+                    {
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/yyyy HH:mm",
+                                "days": "shortDate",
+                                "isdefault": true,
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "seconds": "MM/dd/yyyy HH:mm:ss",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            }
+                        },
+                        "hierarchies": [
+                            "calendar",
+                            "calendar - weeks"
+                        ],
+                        "instanceid": "74645-B708-51",
+                        "jaql": {
+                            "column": "bookingCreatedDATE",
+                            "datatype": "datetime",
+                            "dim": "[Bookings.bookingCreatedDATE (Calendar)]",
+                            "level": "years",
+                            "merged": true,
+                            "table": "Bookings",
+                            "title": "Years in bookingCreatedDATE"
+                        }
+                    },
+                    {
+                        "instanceid": "7E954-EACC-14",
+                        "jaql": {
+                            "column": "Username",
+                            "datatype": "text",
+                            "dim": "[User.Username]",
+                            "merged": true,
+                            "table": "User",
+                            "title": "Username"
+                        }
+                    },
+                    {
+                        "instanceid": "1DF38-04CE-98",
+                        "jaql": {
+                            "column": "User Id",
+                            "datatype": "numeric",
+                            "dim": "[User.User Id]",
+                            "merged": true,
+                            "table": "User",
+                            "title": "User Id"
+                        }
+                    }
+                ],
+                "name": "columns"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "6628e35415248d0032eaa65b",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "dataTypes": {
+            "dimensions": true,
+            "filter": false,
+            "measures": false
+        },
+        "disallowSelector": true,
+        "selector": false,
+        "supportsHierarchies": false,
+        "triggersDomready": true
+    },
+    "style": {
+        "automaticHeight": true,
+        "borders/all": true,
+        "borders/columns": false,
+        "borders/grid": false,
+        "borders/rows": false,
+        "colors/columns": false,
+        "colors/headers": true,
+        "colors/rows": true,
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "quarters_in_date",
+                    "plural": "Quarters in Date",
+                    "singular": "Quarters in Date",
+                    "title": "Quarters in Date"
+                },
+                {
+                    "id": "bookingcreatedbyuserid",
+                    "plural": "bookingCreatedByUserId",
+                    "singular": "bookingCreatedByUserId",
+                    "title": "bookingCreatedByUserId"
+                },
+                {
+                    "id": "area",
+                    "plural": "Area",
+                    "singular": "Area",
+                    "title": "Area"
+                },
+                {
+                    "id": "bookingid",
+                    "plural": "bookingId",
+                    "singular": "bookingId",
+                    "title": "bookingId"
+                },
+                {
+                    "id": "site_group",
+                    "plural": "Site Group",
+                    "singular": "Site Group",
+                    "title": "Site Group"
+                },
+                {
+                    "id": "years_in_bookingcreateddate",
+                    "plural": "Years in bookingCreatedDATE",
+                    "singular": "Years in bookingCreatedDATE",
+                    "title": "Years in bookingCreatedDATE"
+                },
+                {
+                    "id": "username",
+                    "plural": "Username",
+                    "singular": "Username",
+                    "title": "Username"
+                },
+                {
+                    "id": "user_id",
+                    "plural": "User Id",
+                    "singular": "User Id",
+                    "title": "User Id"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "pageSize": 25,
+        "scroll": false,
+        "tableState": {
+            "colResize": {
+                "columns": [
+                    "126.375px",
+                    "176.25px",
+                    "144.141px",
+                    "87.3906px",
+                    "93.1562px",
+                    "206.609px",
+                    "111.219px",
+                    "75px"
+                ],
+                "tableSize": 1018
+            },
+            "columns": [
+                {
+                    "search": {
+                    },
+                    "visible": true
+                },
+                {
+                    "search": {
+                    },
+                    "visible": true
+                },
+                {
+                    "search": {
+                    },
+                    "visible": true
+                },
+                {
+                    "search": {
+                    },
+                    "visible": true
+                },
+                {
+                    "search": {
+                    },
+                    "visible": true
+                },
+                {
+                    "search": {
+                    },
+                    "visible": true
+                },
+                {
+                    "search": {
+                    },
+                    "visible": true
+                },
+                {
+                    "search": {
+                    },
+                    "visible": true
+                }
+            ],
+            "headers": [
+                {
+                    "datatype": "datetime",
+                    "dim": "[Dates.Date (Calendar)]",
+                    "level": "quarters",
+                    "title": "Quarters in Date"
+                },
+                {
+                    "datatype": "numeric",
+                    "dim": "[Bookings.bookingCreatedByUserId]",
+                    "title": "bookingCreatedByUserId"
+                },
+                {
+                    "datatype": "text",
+                    "dim": "[Area.Area]",
+                    "title": "Area"
+                },
+                {
+                    "datatype": "text",
+                    "dim": "[Bookings.bookingId]",
+                    "title": "bookingId"
+                },
+                {
+                    "datatype": "text",
+                    "dim": "[Site Group.Site Group]",
+                    "title": "Site Group"
+                },
+                {
+                    "datatype": "datetime",
+                    "dim": "[Bookings.bookingCreatedDATE (Calendar)]",
+                    "level": "years",
+                    "title": "Years in bookingCreatedDATE"
+                },
+                {
+                    "datatype": "text",
+                    "dim": "[User.Username]",
+                    "title": "Username"
+                },
+                {
+                    "datatype": "numeric",
+                    "dim": "[User.User Id]",
+                    "title": "User Id"
+                }
+            ],
+            "iScroller": 0,
+            "iScrollerTopRow": 0,
+            "length": 25,
+            "order": [
+                [
+                    0,
+                    "asc"
+                ]
+            ],
+            "search": {
+                "caseInsensitive": true,
+                "regex": false,
+                "search": "",
+                "smart": true
+            },
+            "start": 0,
+            "time": 1712827450212
+        },
+        "width/content": true,
+        "width/window": false,
+        "wordwrap/headers": true,
+        "wordwrap/rows": false
+    },
+    "subtype": "tablewidget",
+    "title": "",
+    "type": "tablewidget"
+}

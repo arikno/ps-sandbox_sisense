@@ -1,0 +1,277 @@
+{
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "6628e35415248d0032eaa652",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aAzureSQLIAAaEC",
+        "fullname": "LocalHost/AzureSQL EC",
+        "id": "aLOCALHOST_aAZURESQLIAAaEC",
+        "title": "AzureSQL EC"
+    },
+    "desc": null,
+    "drillToDashboardConfig": {
+        "dashboardIds": [
+        ],
+        "displayDashboardsPane": true,
+        "displayFilterPane": true,
+        "displayHeaderRow": true,
+        "displayToolbarRow": true,
+        "drillToDashboardByName": false,
+        "drillToDashboardMenuCaption": "Jump to dashboard",
+        "drillToDashboardNavigateType": 2,
+        "drillToDashboardNavigateTypeCharts": 1,
+        "drillToDashboardNavigateTypeOthers": 3,
+        "drillToDashboardNavigateTypePivot": 2,
+        "drillToDashboardRightMenuCaption": "Jump to ",
+        "drilledDashboardDisplayType": 2,
+        "drilledDashboardPrefix": "_drill",
+        "drilledDashboardsFolderPrefix": "",
+        "excludeFilterDims": [
+        ],
+        "forceZeroInsteadNull": false,
+        "hideDrilledDashboards": true,
+        "hideSharedDashboardsForNonOwner": true,
+        "ignoreFiltersSource": false,
+        "includeFilterDims": [
+        ],
+        "mergeTargetDashboardFilters": false,
+        "modalWindowResize": false,
+        "resetDashFiltersAfterJTD": false,
+        "sameCubeRestriction": true,
+        "sendBreakByValueFilter": true,
+        "sendPieChartMeasureFiltersOnClick": true,
+        "showFolderNameOnMenuSelection": false,
+        "showJTDIcon": true,
+        "volatile": false
+    },
+    "lastOpened": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[Dates.Date (Calendar)]_months",
+                            "index": 0
+                        },
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/yyyy HH:mm",
+                                "days": "shortDate",
+                                "isdefault": true,
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "seconds": "MM/dd/yyyy HH:mm:ss",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            }
+                        },
+                        "hierarchies": [
+                            "calendar",
+                            "calendar - weeks"
+                        ],
+                        "instanceid": "15926-6CE3-36",
+                        "jaql": {
+                            "column": "Date",
+                            "datatype": "datetime",
+                            "dim": "[Dates.Date (Calendar)]",
+                            "level": "months",
+                            "merged": true,
+                            "table": "Dates",
+                            "title": "Months in Date"
+                        },
+                        "panel": "rows"
+                    }
+                ],
+                "name": "rows"
+            },
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[Bookings.bookingCount]_sum",
+                            "index": 1
+                        },
+                        "format": {
+                            "color": {
+                                "type": "color"
+                            },
+                            "mask": {
+                                "b": true,
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "t": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "ADDB1-F81E-F8",
+                        "jaql": {
+                            "agg": "sum",
+                            "column": "bookingCount",
+                            "datatype": "numeric",
+                            "dim": "[Bookings.bookingCount]",
+                            "table": "Bookings",
+                            "title": "Total bookingCount"
+                        },
+                        "panel": "measures"
+                    },
+                    {
+                        "field": {
+                            "id": "(sum([F06CD-796]), PREV([1AFAA-EEA],1))",
+                            "index": 2
+                        },
+                        "format": {
+                            "color": {
+                                "type": "color"
+                            },
+                            "mask": {
+                                "b": true,
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "t": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "F10B4-1234-29",
+                        "jaql": {
+                            "context": {
+                                "[1AFAA-EEA]": {
+                                    "column": "Date",
+                                    "datatype": "datetime",
+                                    "dim": "[Dates.Date (Calendar)]",
+                                    "level": "months",
+                                    "merged": true,
+                                    "table": "Dates",
+                                    "title": "Months in Date"
+                                },
+                                "[F06CD-796]": {
+                                    "column": "bookingCount",
+                                    "datatype": "numeric",
+                                    "dim": "[Bookings.bookingCount]",
+                                    "table": "Bookings",
+                                    "title": "Booking Count"
+                                }
+                            },
+                            "datatype": "numeric",
+                            "formula": "(sum([F06CD-796]), PREV([1AFAA-EEA],1))",
+                            "title": "PREV1",
+                            "type": "measure"
+                        },
+                        "panel": "measures"
+                    },
+                    {
+                        "field": {
+                            "id": "(sum([F06CD-796]), PREV([1AFAA-EEA],1))",
+                            "index": 3
+                        },
+                        "format": {
+                            "color": {
+                                "type": "color"
+                            },
+                            "mask": {
+                                "b": true,
+                                "decimals": "auto",
+                                "isdefault": true,
+                                "separated": true,
+                                "t": true,
+                                "type": "number"
+                            }
+                        },
+                        "instanceid": "F10B4-1234-29",
+                        "jaql": {
+                            "context": {
+                                "[C6175-893]": {
+                                    "column": "Date",
+                                    "datatype": "datetime",
+                                    "dim": "[Dates.Date (Calendar)]",
+                                    "level": "months",
+                                    "merged": true,
+                                    "table": "Dates",
+                                    "title": "Months in Date"
+                                },
+                                "[D5A6D-748]": {
+                                    "column": "bookingCount",
+                                    "datatype": "numeric",
+                                    "dim": "[Bookings.bookingCount]",
+                                    "table": "Bookings",
+                                    "title": "Booking Count"
+                                }
+                            },
+                            "datatype": "numeric",
+                            "formula": "(sum([D5A6D-748]), PREV([C6175-893],1)) + (sum([D5A6D-748]), PREV([C6175-893],2))",
+                            "title": "PREV2",
+                            "type": "measure"
+                        },
+                        "panel": "measures"
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                ],
+                "name": "columns"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "6628e35415248d0032eaa65e",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "select",
+        "drillToAnywhere": true,
+        "selector": false,
+        "triggersDomready": true
+    },
+    "style": {
+        "automaticHeight": true,
+        "colors": {
+            "columns": false,
+            "headers": false,
+            "members": false,
+            "rows": true,
+            "totals": false
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "months_in_date",
+                    "plural": "Months in Date",
+                    "singular": "Months in Date",
+                    "title": "Months in Date"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "pageSize": 25,
+        "scroll": false
+    },
+    "subtype": "pivot2",
+    "title": "",
+    "type": "pivot2"
+}
